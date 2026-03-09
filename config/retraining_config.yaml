@@ -1,0 +1,15 @@
+experiment_dir: ''
+
+dataset_dir: './data'
+attack: 'badnets'
+dataset: 'cifar10'
+poisoned_set: 'data/cifar10_poisoned_0.1_0_train'
+test_poisoned_set: 'data/cifar10_poisoned_0.1_0_test'
+poisoned_rate: 0.1
+target_label: 0
+
+indices: ''
+
+epochs: 200
+wandb: False
+device: 'cuda'

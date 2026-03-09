@@ -1,0 +1,41 @@
+experiment_dir: ''
+# attack
+attack: "badnets"
+target_label: 0
+poisoned_rate: 0.1
+train_poisoned_set: ""
+test_poisoned_set: ""
+
+# dataset
+dataset: "cifar10"
+data_dir: "./data"
+num_workers: 4
+pin_memory: True
+seed: 42
+
+# train options
+batch_size: 128
+image_size: 224
+start_epoch: 0
+epochs: 100
+save_epoch: -1
+device: cuda
+wandb: False
+plot_epoch: 10000
+test_epoch: 10000
+
+# model options
+resnet: "resnet18"
+weights: None
+freeze_encoder: False
+projection_dim: 64 # "[...] to project the representation to a 128-dimensional latent space"
+n_features_latent: -1
+
+# loss options
+optimizer: "Adam" # or LARS (experimental)
+lr: 3.0e-4
+momentum: 0.9
+weight_decay: 1.0e-6 # "optimized using LARS [...] and weight decay of 10−6"
+temperature: 0.5 # see appendix B.7.: Optimal temperature under different batch sizes
+
+

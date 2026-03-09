@@ -1,0 +1,12 @@
+## Experiment args
+# Train
+epochs: 10
+seed: 0
+device: 'cuda'
+
+# Logging
+name: null
+project: null
+eval_every: null
+check_every: null
+log_wandb: false

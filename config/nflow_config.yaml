@@ -1,0 +1,45 @@
+## Experiment args
+epochs: 50
+seed: 0
+device: 'cuda'
+
+# Logging
+name: ''
+project: ''
+eval_every: -1
+check_every: -1
+log_tb: null
+log_wandb: 'none'
+
+## Data args
+dataset: "cifar10"
+attack: "badnets"
+experiment_dir: ''
+oneclass: -1
+selfsup_backbone: "resnet18"
+target_label: 0
+poisoned_set: 'data/cifar10_poisoned_0.1_0_train'
+n_features_latent: -1
+projection_dim: 128
+gaussian_noise_std: 0.0
+
+# Train
+batch_size: 64
+num_workers: 4
+pin_memory: true
+
+## Model args
+model: "nflow"
+steps: 2
+inflate_coef: 1
+
+## Optimizer args
+optimizer: "Adam"
+lr: 1.0e-3
+warmup: -1
+momentum: 0.9
+momentum_sqr: 0.99
+gamma: 1.0
+use_grad_norm: 0.0
+
+feats: ""

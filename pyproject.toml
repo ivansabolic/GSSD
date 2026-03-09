@@ -1,0 +1,28 @@
+[project]
+name = "lebd"
+version = "1.0.0"
+description = "Likelihood Estimation Based Defense — Backdoor Defense through Self-Supervised and Generative Learning (BMVC 2024)"
+requires-python = ">=3.10"
+dependencies = [
+    # Core
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "numpy>=1.23",
+    "scipy",
+    "pyyaml",
+    "tqdm",
+
+    # Visualization & logging
+    "matplotlib",
+    "wandb",
+    "prettytable",
+    "tensorboard",
+
+    # Image processing (used by attack implementations)
+    "opencv-python",
+    "Pillow",
+    "imageio",
+
+    # Perceptual similarity (used by ISSBA attack)
+    "lpips",
+]
