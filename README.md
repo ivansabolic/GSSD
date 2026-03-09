@@ -26,14 +26,14 @@ uv sync
 
 ## Pipeline
 
-LEBD follows a 6-step pipeline. The full pipeline can be run end-to-end with the provided experiment script:
+The full pipeline can be run end-to-end with the provided experiment script:
 
 ```bash
 bash run_scripts/run_cifar10_experiments.sh [GPU_ID]
 ```
 
 This reproduces the CIFAR-10 results from the paper (Table 1) for BadNets, Blended, and WaNet attacks.
-
+Please reach out for attack data in order to reproduce other attacks. 
 
 ## Project Structure
 
